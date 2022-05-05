@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll CSS</title>
+    <style type="text/css">
+        html{
+            scroll-behavior: smooth;
+        }
+
+        a{
+            display: inline-block;
+            width: auto;
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+        nav, scroll-container {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        nav {
+            width: 600px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        scroll-container {
+            width: 800px;
+            height: auto;
+            position: relative;
+        }
+        scroll-page {
+            border: 1px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 2em;
+            margin: 15px;
+        }
+
+
+        #topo{
+            position: absolute;
+            bottom: 15px;
+            right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#page-1"> Seção 01 </a> |
+        <a href="#page-2"> Seção 02 </a> |
+        <a href="#page-3"> Seção 03 </a> |
+    </nav>
+    <scroll-container>
+        <scroll-page id="page-1">
+            <h2> Conteúdo 01 </h2> <hr>
+            Seguimos nosso caminho por este mar de longo
+            Até a oitava da Páscoa
+            Topamos aves
+            E houvemos vista de terra
+            os selvagens
+            Mostraram-lhes uma galinha
+            Quase haviam medo dela
+            E não queriam por a mão
+            E depois a tomaram como espantados
+            primeiro chá
+            Depois de dançarem
+            Diogo Dias
+            Fez o salto real
+            as meninas da gare
+            Eram três ou quatro moças bem moças e bem gentis
+            Com cabelos mui pretos pelas espáduas
+            E suas vergonhas tão altas e tão saradinhas
+            Que de nós as muito bem olharmos
+            Não tínhamos nenhuma vergonha.
+        </scroll-page>
+
+        <scroll-page id="page-2"> <h2>Conteúdo 02</h2>
+            Ensaia um sorriso
+            e oferece-o a quem não teve nenhum.
+            Agarra um raio de sol
+            e desprende-o onde houver noite.
+            Descobre uma nascente
+            e nela limpa quem vive na lama.
+            Toma uma lágrima
+            e pousa-a em quem nunca chorou.
+            Ganha coragem
+            e dá-a a quem não sabe lutar.
+            Inventa a vida
+            e conta-a a quem nada compreende.
+            Enche-te de esperança
+            e vive á sua luz.
+            Enriquece-te de bondade
+            e oferece-a a quem não sabe dar.
+            Vive com amor
+            e fá-lo conhecer ao Mundo.            
+            <a href="#page-1">Seção 01</a>
+        </scroll-page>
+
+        <scroll-page id="page-3"> <h2>Conteúdo 03</h2>
+            Fizeram a gente acreditar que amor mesmo,
+            amor pra valer, só acontece uma vez
+            acionado, nem chega com hora marcada.
+            Fizeram a gente acreditar que cada um de
+            nós é a metade de uma laranja, e que a vida
+            só ganha sentido quando encontramos a
+            outra metade.
+            
+            Não contaram que já nascemos inteiros,
+            que ninguém em nossa vida merece carregar
+            nas costas a responsabilidade de completar
+            o que nos falta: a gente cresce através da
+            gente mesmo. Se estivermos em boa companhia
+            é só mais agradável.
+            
+            Fizeram a gente acreditar que só há uma
+            fórmula de ser feliz, a mesma para todos,
+            e os que escapam dela estão condenados
+            à marginalidade. Não contaram que estas
+            fórmulas dão errado, frustram as pessoas,
+            são alienantes, e que podemos tentar outras
+            alternativas.
+            
+            Cada um vai ter que descobrir sozinho.
+            E aí, quando você estiver muito apaixonado
+            por você mesmo, vai poder ser muito feliz
+            e se apaixonar por alguém.
+            <a href="#page-2">Seção 02</a>
+        </scroll-page>
+        <a id="topo" href="#top">Home</a>
+    </scroll-container>
+
+    
+</body>
+</html>
